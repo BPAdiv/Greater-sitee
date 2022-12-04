@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+}
+
+
+.login-page {
+    margin-top: 2rem;
+    /* background-color: aqua; */
+    border-radius: 3rem;
+    padding: 4rem;
+    /* opacity: 5%; */
+    background: linear-gradient(75deg, rgb(238, 241, 255), rgb(210, 218, 255), rgb(170, 196, 255), rgb(177, 178, 255));
+}
+
+h1,
+h2 {
+    background: -webkit-linear-gradient(300deg, rgb(141, 158, 255), rgb(108, 74, 182));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: rgb(185, 224, 255); */
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.input-types {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+input {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    border: none;
+    /* box-shadow: -1px -1px 8px -3px rgba(0, 0, 0, 0.5); */
+}
+
+label {
+    position: absolute;
+    font-size: 15px;
+    z-index: 3;
+    top: -10px;
+    background-color: white;
+    left: 20px;
+    padding: 2px 6px;
+    border-radius: 10px;
+
+}
+
+input[type=submit] {
+    background: linear-gradient(to right, rgb(129, 12, 168), rgb(121, 0, 255));
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.forgot {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+
+
+}
+
+.forgot * {
+    /* color: rgb(33, 146, 255); */
+    text-decoration: none;
+    position: relative;
+}
+
+.forgot *:hover {
+    text-decoration: underline;
+}
+
+.link-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.forgot a::before {
+    content: 'Unlucky you are going to hell ';
+    /* padding: 1rem; */
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    padding-inline: .5rem;
+    top: -20px;
+    left: -10px;
+    width: max-content;
+    opacity: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 300ms, opacity ease-in 350ms;
+
+
+
+}
+
+.forgot a:hover::before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+
+
+
+.a,
+.b {
+    background-color: red;
+    padding: 3rem;
+}
+
+.a {
+    position: absolute;
+    margin-left: 90%;
+}
+
+.b {
+    position: absolute;
+    margin-right: 90%;
+}
+
+/* rgb(141, 158, 255) rgb(185, 224, 255) rgb(141, 114, 225) rgb(108, 74, 182) */
